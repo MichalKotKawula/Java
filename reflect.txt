@@ -1,0 +1,19 @@
+//*************************************************//
+//
+// Michal Kot-Kawula
+// Seneca email: mkot-kawula@myseneca.ca
+// Seneca Student ID: 128945193
+// Date: 12/4/2021
+//
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+//
+//*************************************************//
+
+
+After completing milestone 3 I have gained more in depth knowlege about STL containers and algorithms throughout functions such as "for_each" or "any_of" in the Line Manager construtor. 
+I have also imporved my implementation skills of deque with customerOrder pending, completed, incomplete in Workstation module and LineManager module. 
+I had certain difficulties with getting the desired output, because of incorrect implementation of CustomerOrder constructor where the logic was incomplete extracting tokens, I'm unsure how I haven't noticed it earlier but it came out as an issue in my MS3.
+When implementing attemptToMoveOrder() function I had cerntain difficulites with understanding the syntax of moving the order to completed queue, but after a bit of researchand trial and error I have solved my issue by implementing  incomplete.push_back(std::move(m_orders.front())); and completed.push_back(std::move(m_orders.front()));.
+
+By finishing this project I refreshed my memory on many topics and had a chance to implement my gained knowledge thorughout this semester.
+Although I wish the instructions regarding certain implementations of functions in this project had been easier to understand and did not require in depth analysis to fully comprehend, I appreciated this opportunity. 
