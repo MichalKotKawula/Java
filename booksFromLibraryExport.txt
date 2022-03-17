@@ -1,0 +1,17 @@
+--------------------
+Book Report
+--------------------
+total records: 2
+
+bookID:1
+Title:Avengers Endgame
+Author:Someone
+Year:2019
+Borrowed:1number_of_copies
+
+bookID:2
+Title:lord of the rings
+Author:hobbit
+Year:2019
+Borrowed:0number_of_copies
+

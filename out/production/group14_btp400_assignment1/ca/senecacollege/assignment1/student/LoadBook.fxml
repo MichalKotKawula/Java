@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="476.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.student.LoadBook">
+   <children>
+      <ImageView fitHeight="505.0" fitWidth="600.0" layoutY="-25.0" pickOnBounds="true">
+         <image>
+            <Image url="@../istockphoto-1332097112-170667a.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.61" />
+         </effect>
+      </ImageView>
+      <Text fill="WHITE" layoutX="229.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books Found" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="229.578125">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="323.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleSearchExit" prefHeight="32.0" prefWidth="95.0" style="-fx-background-color: blue; -fx-background-radius: 7;" text="Exit" textFill="WHITE" />
+      <TableView fx:id="books_collection_table" layoutX="13.0" layoutY="69.0" prefHeight="294.0" prefWidth="574.0">
+         <effect>
+            <ColorAdjust brightness="-0.16" />
+         </effect></TableView>
+      <Button layoutX="179.0" layoutY="424.0" mnemonicParsing="false" onAction="#requestIssue" prefHeight="32.0" prefWidth="118.0" style="-fx-background-color: green; -fx-background-radius: 7;" text="Request Issue" textFill="WHITE" />
+      <ComboBox fx:id="books" layoutX="238.0" layoutY="375.0" prefHeight="32.0" prefWidth="152.0" promptText="Select Book_id..." style="-fx-background-radius: 7;">
+         <effect>
+            <ColorAdjust brightness="-0.16" />
+         </effect></ComboBox>
+      <Separator layoutY="41.0" prefHeight="1.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>

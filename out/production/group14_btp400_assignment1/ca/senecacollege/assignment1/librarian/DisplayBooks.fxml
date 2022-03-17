@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.librarian.DisplayBooks">
+   <children>
+      <Pane prefHeight="440.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="447.0" fitWidth="608.0">
+               <image>
+                  <Image url="@../istockphoto-1332097112-170667a.jpg" />
+               </image>
+            </ImageView>
+            <TableView fx:id="books_collection_table" layoutX="13.0" layoutY="61.0" prefHeight="294.0" prefWidth="574.0" />
+            <Label layoutX="130.0" layoutY="14.0" prefHeight="38.0" prefWidth="347.0" text="All the books in the librarary" textFill="#2500ff">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button layoutX="72.0" layoutY="382.0" mnemonicParsing="false" onAction="#exportToFile" prefHeight="38.0" prefWidth="232.0" text="Click here to export this to txt file" />
+            <Button layoutX="324.0" layoutY="382.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="232.0" text="Click here to go back!" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

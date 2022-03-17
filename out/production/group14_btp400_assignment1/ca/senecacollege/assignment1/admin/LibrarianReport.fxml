@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="401.0" prefWidth="426.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.admin.LibrarianReport">
+   <children>
+      <Pane prefHeight="401.0" prefWidth="426.0" style="-fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="401.0" fitWidth="426.0">
+               <image>
+                  <Image url="@../istockphoto-1332097112-170667a.jpg" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.54" />
+               </effect>
+            </ImageView>
+            <TextArea fx:id="outputArea" editable="false" layoutX="77.0" layoutY="70.0" prefHeight="262.0" prefWidth="273.0" style="-fx-border-color: blue; -fx-background-radius: 15;">
+               <effect>
+                  <Lighting bumpInput="$null" diffuseConstant="1.3">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></TextArea>
+            <Button layoutX="101.0" layoutY="342.0" mnemonicParsing="false" onAction="#exportToFile" prefHeight="37.0" prefWidth="107.0" style="-fx-background-color: green;" text="Export to File" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="255.0" layoutY="342.0" mnemonicParsing="false" onAction="#exitToAdminMenu" prefHeight="37.0" prefWidth="67.0" style="-fx-background-color: blue;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Label layoutX="106.0" layoutY="25.0" text="Librarian Report" textFill="#39eb25">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

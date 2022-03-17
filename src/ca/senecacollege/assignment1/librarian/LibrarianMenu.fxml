@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="238.0" prefWidth="308.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.librarian.LibrarianMenu">
+    <children>
+        <Pane prefHeight="440.0" prefWidth="359.0">
+            <children>
+            <ImageView fitHeight="454.0" fitWidth="383.0" layoutX="-12.0">
+               <image>
+                  <Image url="@../istockphoto-1332097112-170667a.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d5d759" height="35.0" layoutX="48.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="284.0" />
+                <Label fx:id="message" alignment="TOP_CENTER" layoutX="48.0" layoutY="78.0" prefHeight="35.0" prefWidth="284.0" textAlignment="CENTER" textFill="#1005e4" wrapText="true">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Button layoutX="113.0" layoutY="145.0" mnemonicParsing="false" onAction="#addBook" prefHeight="30.0" prefWidth="134.0" text="Add Book Here!" textFill="#3e0ba4">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="113.0" layoutY="205.0" mnemonicParsing="false" onAction="#issueBook" prefHeight="30.0" prefWidth="134.0" text="Issue a Book here!" textFill="#3e0ba4">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="113.0" layoutY="259.0" mnemonicParsing="false" onAction="#viewBooks" prefHeight="30.0" prefWidth="134.0" text="View books avai!" textFill="#3e0ba4">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="113.0" layoutY="312.0" mnemonicParsing="false" onAction="#returnBook" prefHeight="30.0" prefWidth="134.0" text="Return the book!" textFill="#3e0ba4">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="105.0" layoutY="396.0" mnemonicParsing="false" onAction="#logOut" prefHeight="30.0" prefWidth="149.0" text="Safely Signout here!" textFill="#3e0ba4">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

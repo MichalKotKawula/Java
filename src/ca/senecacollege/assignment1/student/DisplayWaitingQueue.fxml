@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="386.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.student.DisplayWaitingQueue">
+   <children>
+      <ImageView fitHeight="414.0" fitWidth="611.0" layoutX="-11.0" layoutY="-4.0" pickOnBounds="true">
+         <image>
+            <Image url="@../istockphoto-1332097112-170667a.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.62" />
+         </effect>
+      </ImageView>
+      <TableView fx:id="books_collection_table" layoutX="107.0" layoutY="71.0" prefHeight="268.0" prefWidth="407.0">
+         <effect>
+            <ColorAdjust brightness="-0.12" />
+         </effect></TableView>
+      <Button layoutX="247.0" layoutY="351.0" mnemonicParsing="false" onAction="#exitToStudMenu" prefHeight="28.0" prefWidth="106.0" style="-fx-background-color: blue; -fx-background-radius: 6;" text="Exit" textFill="WHITE" />
+      <Label layoutX="227.0" layoutY="14.0" text="Books Queue" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-11.0" layoutY="47.0" prefHeight="0.0" prefWidth="611.0" />
+   </children>
+</AnchorPane>

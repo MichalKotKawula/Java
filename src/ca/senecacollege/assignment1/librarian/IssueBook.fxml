@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="499.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.librarian.IssueBook">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="112.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All issue requests shown here" wrappingWidth="434.15625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="341.0" layoutY="414.0" mnemonicParsing="false" onAction="#back" prefHeight="62.0" prefWidth="159.0" text="Back" />
+      <TableView fx:id="borrowed_books_table" layoutX="13.0" layoutY="62.0" prefHeight="294.0" prefWidth="574.0" />
+      <Button layoutX="112.0" layoutY="414.0" mnemonicParsing="false" onAction="#issueBook" prefHeight="62.0" prefWidth="159.0" text="Issue the book" />
+      <ComboBox fx:id="requests" layoutX="212.0" layoutY="367.0" prefHeight="32.0" prefWidth="176.0" promptText="Select ID" />
+   </children>
+   <effect>
+      <ColorAdjust brightness="-0.07" />
+   </effect>
+</AnchorPane>

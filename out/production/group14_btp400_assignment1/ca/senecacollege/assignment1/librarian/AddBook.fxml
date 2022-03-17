@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="357.0" prefWidth="277.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.librarian.AddBook">
+   <children>
+      <Pane prefHeight="357.0" prefWidth="276.0">
+         <children>
+            <ImageView fitHeight="363.0" fitWidth="287.0" layoutX="-10.0" layoutY="-6.0">
+               <image>
+                  <Image url="@../istockphoto-1332097112-170667a.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="39.0" layoutY="24.0" prefHeight="38.0" prefWidth="247.0" text="Book Information" textFill="#0065ff">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="65.0" prefHeight="17.0" prefWidth="97.0" text="Enter Title:" textFill="#0065ff" />
+            <Label layoutX="52.0" layoutY="126.0" prefHeight="17.0" prefWidth="103.0" text="Enter Author" textFill="#0065ff" />
+            <Label layoutX="56.0" layoutY="188.0" prefHeight="17.0" prefWidth="134.0" text="Enter Year of Publish" textFill="#0065ff" />
+            <TextField fx:id="title" layoutX="53.0" layoutY="81.0" />
+            <TextField fx:id="author" layoutX="55.0" layoutY="142.0" />
+            <TextField fx:id="year" layoutX="55.0" layoutY="204.0" />
+            <Button layoutX="46.0" layoutY="304.0" mnemonicParsing="false" onAction="#addBook" prefHeight="44.0" prefWidth="82.0" text="Add Book" />
+            <Button layoutX="155.0" layoutY="304.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="82.0" text="Back" />
+            <Label layoutX="55.0" layoutY="250.0" prefHeight="17.0" prefWidth="134.0" text="Enter Number of Copies" textFill="#0065ff" />
+            <TextField fx:id="copies" layoutX="55.0" layoutY="266.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

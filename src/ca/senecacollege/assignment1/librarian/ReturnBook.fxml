@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="492.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.librarian.ReturnBook">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="107.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check requests of return book here">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="351.0" layoutY="426.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="167.0" text="Wanna go back" />
+      <TableView fx:id="borrowed_books_table" layoutX="13.0" layoutY="71.0" prefHeight="294.0" prefWidth="574.0" />
+      <Button layoutX="114.0" layoutY="426.0" mnemonicParsing="false" onAction="#returnBook" prefHeight="44.0" prefWidth="167.0" text="Wanna return the book" />
+      <ComboBox fx:id="requests" layoutX="212.0" layoutY="372.0" prefHeight="32.0" prefWidth="176.0" promptText="Choose ID" />
+   </children>
+   <effect>
+      <ColorAdjust brightness="-0.07" />
+   </effect>
+</AnchorPane>

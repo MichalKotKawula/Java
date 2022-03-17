@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="410.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.student.DisplayBorrowedBooks">
+   <children>
+      <ImageView fitHeight="415.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../istockphoto-1332097112-170667a.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.66" />
+         </effect>
+      </ImageView>
+      <TableView fx:id="books_collection_table" layoutX="77.0" layoutY="62.0" prefHeight="297.0" prefWidth="446.0">
+         <effect>
+            <ColorAdjust brightness="-0.12" />
+         </effect></TableView>
+      <Button layoutX="247.0" layoutY="366.0" mnemonicParsing="false" onAction="#exitToStudMenu" prefHeight="28.0" prefWidth="106.0" style="-fx-background-color: blue; -fx-background-radius: 7;" text="Exit" textFill="WHITE" />
+      <Label layoutX="191.0" layoutY="6.0" text="Borrowed Books" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutY="40.0" prefHeight="0.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>

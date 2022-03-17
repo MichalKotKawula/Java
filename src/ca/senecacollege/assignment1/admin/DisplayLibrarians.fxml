@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="366.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.admin.DisplayLibrarians">
+    <children>
+        <Pane prefHeight="385.0" prefWidth="349.0">
+            <children>
+            <ImageView fitHeight="385.0" fitWidth="349.0">
+               <image>
+                  <Image url="@../istockphoto-1332097112-170667a.jpg" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.69" />
+               </effect>
+            </ImageView>
+                <Label alignment="CENTER" layoutX="24.0" layoutY="14.0" prefHeight="44.0" prefWidth="303.0" text="Librarians" textFill="#54cd41">
+                    <font>
+                        <Font name="Arial" size="36.0" />
+                    </font>
+                </Label>
+                <Button layoutX="196.0" layoutY="344.0" mnemonicParsing="false" onAction="#exitToAdminMenu" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: blue;" text="Exit" textFill="WHITE" />
+                <Button layoutX="92.0" layoutY="344.0" mnemonicParsing="false" onAction="#deleteLibrarian" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE" />
+                <ComboBox fx:id="users" layoutX="101.0" layoutY="69.0" onAction="#findLibrarian" prefWidth="150.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

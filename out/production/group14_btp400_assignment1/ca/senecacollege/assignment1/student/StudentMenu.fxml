@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="233.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.student.StudentMenu">
+    <children>
+      <ImageView fitHeight="236.0" fitWidth="299.0" nodeOrientation="INHERIT">
+         <image>
+            <Image url="@../istockphoto-1332097112-170667a.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.69" />
+         </effect>
+      </ImageView>
+          <Label fx:id="message" alignment="TOP_CENTER" layoutX="21.0" layoutY="6.0" prefHeight="30.0" prefWidth="259.0" text="Student Menu" textFill="WHITE" wrapText="true">
+              <font>
+                  <Font name="Arial" size="24.0" />
+              </font>
+          </Label>
+          <Button layoutX="100.0" layoutY="63.0" mnemonicParsing="false" onAction="#searchBook" prefHeight="30.0" prefWidth="98.0" style="-fx-background-radius: 7; -fx-background-color: grey;" text="Book Search" textFill="WHITE">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+          <Button layoutX="67.0" layoutY="143.0" mnemonicParsing="false" onAction="#displayBorrowedBooks" prefHeight="30.0" prefWidth="166.0" style="-fx-background-radius: 7; -fx-background-color: grey;" text="View Borrowed Books" textFill="WHITE">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+          <Button layoutX="61.0" layoutY="103.0" mnemonicParsing="false" onAction="#viewWaitingQueue" prefHeight="30.0" prefWidth="176.0" style="-fx-background-radius: 7; -fx-background-color: grey;" text="View Waiting Queue" textFill="WHITE">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+          <Button layoutX="97.0" layoutY="190.0" mnemonicParsing="false" onAction="#logOut" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: blue; -fx-background-radius: 7;" text="Logout" textFill="WHITE">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+      <Separator layoutX="3.0" layoutY="42.0" prefHeight="1.0" prefWidth="293.0" />
+    </children>
+</AnchorPane>

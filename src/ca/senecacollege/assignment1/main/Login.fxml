@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="420.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.main.Login">
+   <center>
+        <Pane prefHeight="277.0" prefWidth="331.0" BorderPane.alignment="CENTER">
+            <children>
+            <ImageView fitHeight="426.0" fitWidth="342.0">
+               <image>
+                  <Image url="@../istockphoto-1332097112-170667a.jpg" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.5" />
+               </effect>
+            </ImageView>
+                <Button layoutX="88.0" layoutY="283.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="167.0" text="Signin" />
+                <Label layoutX="91.0" layoutY="140.0" text="Please enter your password" textFill="#a19cff" />
+                <Label layoutX="92.0" layoutY="80.0" prefHeight="17.0" prefWidth="159.0" text="Please enter your username" textFill="#a19cff" />
+                <Label layoutX="83.0" layoutY="14.0" prefHeight="46.0" prefWidth="176.0" text="The Library" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Label>
+                <Button layoutX="86.0" layoutY="347.0" mnemonicParsing="false" onAction="#ExitPrg" prefHeight="25.0" prefWidth="170.0" text="Exit" />
+                <TextField fx:id="idField" layoutX="92.0" layoutY="103.0" prefHeight="25.0" prefWidth="158.0" />
+                <PasswordField fx:id="passwordField" layoutX="92.0" layoutY="164.0" prefHeight="25.0" prefWidth="158.0" />
+                <ComboBox fx:id="type" layoutX="88.0" layoutY="223.0" prefHeight="25.0" prefWidth="166.0" />
+            <Text fill="#a19cff" layoutX="94.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select your role" wrappingWidth="155.13671875" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fill="#a19cff" layoutX="92.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign into the system here" wrappingWidth="174.13671875" />
+            <Text fill="#a19cff" layoutX="91.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terminate the program here" wrappingWidth="205.13671875" />
+            </children>
+        </Pane>
+   </center>
+</BorderPane>

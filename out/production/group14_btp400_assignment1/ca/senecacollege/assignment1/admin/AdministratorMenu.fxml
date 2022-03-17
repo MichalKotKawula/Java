@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="262.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecacollege.assignment1.admin.AdministratorMenu">
+    <children>
+        <Pane layoutX="4.0" prefHeight="262.0" prefWidth="306.0">
+            <children>
+            <ImageView fitHeight="262.0" fitWidth="310.0" layoutX="-4.0">
+               <image>
+                  <Image url="@../istockphoto-1332097112-170667a.jpg" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.67" />
+               </effect>
+            </ImageView>
+
+                <Button layoutX="71.0" layoutY="107.0" mnemonicParsing="false" onAction="#regLibrarian" prefHeight="30.0" prefWidth="158.0" style="-fx-background-color: grey; -fx-background-radius: 6;" text="Register Librarian" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="113.0" layoutY="223.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: red;" text="Logout" textAlignment="CENTER" textFill="WHITE" />
+                <Label fx:id="welcomemessage" alignment="CENTER" layoutX="34.0" layoutY="50.0" prefHeight="30.0" prefWidth="240.0" textAlignment="CENTER" textFill="#6be83a" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+                </Label>
+                <Button layoutX="79.0" layoutY="146.0" mnemonicParsing="false" onAction="#displayLibrarian" prefHeight="30.0" prefWidth="143.0" style="-fx-background-color: grey; -fx-background-radius: 6;" text="Librarian Records" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Button>
+                <Label layoutX="20.0" layoutY="14.0" text="Administrator Menu" textFill="#eee55e">
+                    <font>
+                        <Font name="Arial" size="30.0" />
+                    </font>
+                </Label>
+                <Button layoutX="85.0" layoutY="184.0" mnemonicParsing="false" onAction="#generateReport" prefHeight="30.0" prefWidth="137.0" style="-fx-background-color: grey; -fx-background-radius: 6;" text="Generate Report" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
